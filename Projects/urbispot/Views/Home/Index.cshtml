@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section CSS
+{
+    <link href="~/CSS/Carousel.css" rel="stylesheet" />
+    <link href="~/CSS/urbispot.css" rel="stylesheet" />
+}
+@section script
+{
+}
+@section featured {
+    @{Html.RenderPartial("_CarouselPartial");}
+}
+
+<div class="row">
+    <div class="col-lg-8">
+        @{ Html.RenderPartial("_Steps");}
+    </div>
+    <div class="col-lg-4">
+        <div class="sidebar-title">
+            <h2>Title of the side bar</h2>
+        </div>
+        <div class="sidebar-body">
+            <h5> add email address and birthdate fields.  We will assume at this point that an 
+            application has been created using the default template, and registration is working with 
+            the default model which contains username and password. In addition, this method uses a co</h5>
+        </div>
+    </div>
+</div>
+
+
+
